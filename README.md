@@ -44,6 +44,22 @@ DHCP is verified to be working under the PC1 desktop. Notice that the IP address
 <img src="https://imagizer.imageshack.com/img923/277/P4S1Gk.png" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+The ipconfig /renew command has the ability to erase the network address and ask the DHCP server to assign a new one. In this case, the address is the same as before:<br/>
+<img src="https://imagizer.imageshack.com/img922/3958/5PyaEB.png"/>
+<br />
+<br />
+
+<h2>Setting the switches as DHCP clients:</h2>
+The CLI on switch 1 is used to configure VLAN 1 to receive an IP address dynamically from router 1. The interface is then enabled, and an ip interface brief is run to verify the changes. These steps are repeated for switches 2 and 3, however switch 3 will not receive an address before configuring the DHCP relay:<br/>
+<img src="https://imagizer.imageshack.com/img924/8756/7CRpzj.png" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
+<h2>Configuring DHCP relay:</h2>
+:<br/>
+<img src="" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 
 <!--
  ```diff
