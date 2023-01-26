@@ -56,8 +56,24 @@ The CLI on switch 1 is used to configure VLAN 1 to receive an IP address dynamic
 <br />
 
 <h2>Configuring DHCP relay:</h2>
-:<br/>
-<img src="" alt="Disk Sanitization Steps"/>
+Router 2 is configured using a DHCP relay on interface Gigabit Ethernet 0/0:<br/>
+<img src="https://imagizer.imageshack.com/img922/921/egHjcN.png" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+The settings are then verified using the show running-config command:<br/>
+<img src="https://imagizer.imageshack.com/img922/9995/vT8CZc.png" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+The DHCP binding for router 1 is shown, and all devices have a DHCP assigned IP address:<br/>
+<img src="https://imagizer.imageshack.com/img924/4796/kgaKzo.png" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+The PC5 interface is opened to verify that the DHCP link is working correctly:<br/>
+<img src="https://imagizer.imageshack.com/img924/1037/Rxw8rY.png" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+PC5 executes a successful ping to PC1:<br/>
+<img src="https://imagizer.imageshack.com/img923/4021/GnZpPc.png" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
